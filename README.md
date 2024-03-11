@@ -26,7 +26,7 @@ To use this script:
 1. Install Node.js if you haven't already.
 2. Clone this repository to your local machine.
 3. Install the required dependencies using npm: `npm install`.
-4. Run the script: `node index.js`.
+4. Run the script: `node test.js`.
 5. Wait for the script to scrape the data and create the Excel file named "products.xlsx" in the project directory.
 
 ## License

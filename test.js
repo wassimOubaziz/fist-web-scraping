@@ -56,20 +56,6 @@ async function test() {
         // Alternative method 1: JavaScript click
         await driver.executeScript("arguments[0].click();", nextPageLink);
 
-        // Alternative method 2: Action Chains
-        // const actions = driver.actions();
-        // await actions.move({ origin: nextPageLink }).click().perform();
-
-        // Alternative method 3: Scroll Into View and Click
-        // await driver.executeScript("arguments[0].scrollIntoView();", nextPageLink);
-        // await nextPageLink.click();
-
-        // Alternative method 4: JavaScript Executor with XPath
-        // await driver.executeScript(
-        //   `document.evaluate("//a[@class='pg' and text()='${currentPage + 1}']", document, null,
-        //     XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click();`
-        // );
-
         await driver.sleep(2000); // Wait for the page to load
       } catch (error) {
         console.error(
